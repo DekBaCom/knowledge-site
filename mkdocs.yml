@@ -1,0 +1,103 @@
+site_name: Knowledge Space
+site_description: "คลังความรู้ (Knowledge) สำหรับแบ่งปันบทความ คู่มือ และบันทึก — Thai & English"
+site_url: https://example.com
+repo_url: https://github.com/your-username/knowledge-site
+repo_name: your-username/knowledge-site
+copyright: "© 2025 Knowledge Space"
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.integrate
+    - announce.dismiss
+    - header.autohide
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - tags
+    - blog
+  icon:
+    logo: material/library
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/
+
+plugins:
+  - search
+  - tags
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - social:
+      cards_layout_options:
+        background_color: "#1f2937"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.arithmatex
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Guides:
+      - Beginner's Guide: guide/getting-started.md
+      - Writing Style: guide/writing-style.md
+  - ไทย (Thai):
+      - แนะนำเว็บไซต์: th/intro-th.md
+  - Blog:
+      - blog/first-post.md
+
+extra_css:
+  - assets/custom.css
+
+extra_javascript: []
+
+# If you use a custom domain, place your domain in docs/CNAME

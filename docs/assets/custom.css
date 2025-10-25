@@ -1,0 +1,6 @@
+:root {
+  --md-text-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --md-code-font: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+/* Small style tweaks */
+.md-typeset h1, .md-typeset h2 { scroll-margin-top: 80px; }
