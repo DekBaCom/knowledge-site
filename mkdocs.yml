@@ -1,9 +1,9 @@
 site_name: Knowledge Space
-site_description: "คลังความรู้ (Knowledge) สำหรับแบ่งปันบทความ คู่มือ และบันทึก — Thai & English"
+site_description: "คลังความรู้ (Knowledge) สำหรับแบ่งปันบทความ คู่มือ และบันทึก"
 site_url: https://example.com
-repo_url: https://github.com/your-username/knowledge-site
-repo_name: your-username/knowledge-site
-copyright: "© 2025 Knowledge Space"
+repo_url: https://github.com/Dekbacom/knowledge-site
+repo_name: Dekbacom/knowledge-site
+copyright: "© 2025 Knowledge "
 
 theme:
   name: material
